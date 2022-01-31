@@ -1,0 +1,13 @@
+@use "breakpoints" as bp;
+
+.p-header{
+    grid-row: 1;
+    grid-column: 1;
+    height: 217px;
+    @include bp.bp-mq(pc-1293px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } 
+}

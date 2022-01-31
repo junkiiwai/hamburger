@@ -1,0 +1,31 @@
+@use "breakpoints" as bp;
+
+.p-search{
+    display: flex;
+    justify-content: center;
+   
+    @include bp.bp-mq(pc-1293px) {
+        margin-right: 5%;
+    }
+
+    .p-search__scope{
+        width: 200px;
+        margin-right: 6px;
+        @include bp.bp-mq(pad-435px) {
+            width: 46%;
+        } 
+        @include bp.bp-mq(pc-835px) {
+            width: 384px;
+        } 
+    }
+
+    .p-search__btn{
+        width: 80px;
+        @include bp.bp-mq(pad-600px) {
+            width: 13%;
+        } 
+        @include bp.bp-mq(pc-835px) {
+            width: 109px;
+        } 
+    }
+}

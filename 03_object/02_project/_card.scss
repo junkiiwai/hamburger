@@ -1,0 +1,30 @@
+@use "breakpoints" as bp;
+
+.p-card {
+  padding: 2% 4%;
+  height: fit-content;
+  .p-card__title {
+    font-size: 20px;
+    @include bp.bp-mq(pc-1293px) {
+      font-size: 1.55vw;
+    }
+  }
+  .p-card__subtitle {
+    font-size: 16px;
+  }
+  .p-card__text {
+    margin-right: 10%;
+    font-size: 16px;
+  }
+  .p-card__btn {
+    margin: 7% 0 5% 0;
+    display: flex;
+    justify-content: center;
+
+    .p-card__btn__size {
+      @include bp.bp-mq(pc-1293px) {
+        padding: 10px 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@use "breakpoints" as bp;
+
+.p-sidebar{
+    grid-row: 1/4;
+    grid-column: 2;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    @include bp.bp-mq(pc-926px){
+        grid-row: 1/3;
+    }
+}

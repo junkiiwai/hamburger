@@ -1,0 +1,24 @@
+@use "sass:map";
+ 
+$breakpoints: (
+  'phone-375px': '(max-width: 375px)',
+  'pad-376px': '(min-width: 376px)',
+  'pad-435px': '(min-width: 435px)',
+  'pad-500px': '(min-width: 500px)',
+  'pad-600px': '(min-width: 600px)',
+  'pc-835px': '(min-width: 835px)',
+  'pc-872px': '(min-width: 872px)',
+  'pc-926px': '(min-width: 926px)',
+  'pc-992px': '(min-width: 992px)',
+  'pc-1200px': '(min-width: 1200px)',
+  'pc-1293px': '(min-width: 1293px)',
+  'pc-1400px': '(min-width: 1400px)',
+  'pc-1700px': '(min-width: 1700px)',
+  'pc-1743px': '(min-width: 1743px)',
+) !default;
+ 
+@mixin bp-mq($name: pc-992px) {
+  @media screen and #{map.get($breakpoints, $name)} {
+    @content;
+  }
+}

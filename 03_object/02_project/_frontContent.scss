@@ -1,0 +1,71 @@
+@use "breakpoints" as bp;
+
+.p-frontContent {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 4%;
+  @include bp.bp-mq(pad-600px) {
+    margin-bottom: 0;
+    width: 47%;
+  }
+  .p-frontContent__img {
+    width: 100%;
+  }
+  .p-frontContent__title {
+    position: absolute;
+    top: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 41px;
+    padding: 17px 15px;
+    margin: 0;
+    @include bp.bp-mq(pad-600px) {
+      font-size: 44px;
+    }
+    @include bp.bp-mq(pc-872px) {
+      font-size: 5.05vw;
+    }
+    @include bp.bp-mq(pc-926px) {
+      font-size: 46.8px;
+    }
+    @include bp.bp-mq(pc-1293px) {
+      font-size: 3.62vw;
+    }
+  }
+  .p-frontContent__underbar {
+    position: absolute;
+    display: block;
+    top: 90px;
+    margin-left: 15px;
+    @include bp.bp-mq(pad-600px) {
+      top: 95px;
+    }
+    @include bp.bp-mq(pc-872px) {
+      top: 13.5%;
+    }
+    @include bp.bp-mq(pc-926px) {
+      top: 100px;
+    }
+    @include bp.bp-mq(pc-1293px) {
+      top: 45px;
+      margin-top: 15%;
+    }
+  }
+  .p-frontContent__titleText {
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .p-frontContent__titleText__title {
+      font-size: 22px;
+      @include bp.bp-mq(pad-600px) {
+        font-size: 24px;
+      }
+    }
+    .p-frontContent__titleText__text {
+      font-size: 16px;
+    }
+  }
+}

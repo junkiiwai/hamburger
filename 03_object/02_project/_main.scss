@@ -1,0 +1,18 @@
+@use "breakpoints" as bp;
+
+.p-main--front {
+  grid-row: 2;
+  grid-column: 1;
+  width: 100vw;
+  @include bp.bp-mq(pc-872px) {
+    width: 100%;
+  }
+}
+.p-main--arc {
+  grid-row: 2;
+  grid-column: 1;
+  width: 100vw;
+  @include bp.bp-mq(pc-926px) {
+    width: 100%;
+  }
+}

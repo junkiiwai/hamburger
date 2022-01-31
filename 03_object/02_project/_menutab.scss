@@ -1,0 +1,32 @@
+@use "breakpoints" as bp;
+
+.p-menutab--open {
+  display: block;
+  padding: 10px 10px;
+  margin: 0 5px 0 auto;
+  border: none;
+  font-size: 20px;
+  // @include bp.bp-mq(pad-600px) {
+  //   font-size: 3.35vw;
+  // }
+  @include bp.bp-mq(pc-926px) {
+    color: #fff7ef;
+    // font-size: 31.02px;
+  }
+  @include bp.bp-mq(pc-1293px) {
+    display: none;
+  }
+}
+
+.p-menutab--close{
+  @include bp.bp-mq(pc-926px){
+      display: none;
+  }
+}
+
+.p-menutab--bg{
+  grid-row: 1/4;
+  grid-column: 1;
+  z-index: 1;
+  visibility: hidden;
+}

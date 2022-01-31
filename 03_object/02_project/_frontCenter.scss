@@ -1,0 +1,13 @@
+@use "breakpoints" as bp;
+
+.p-frontCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+
+  @include bp.bp-mq(pad-600px){
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

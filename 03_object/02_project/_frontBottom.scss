@@ -1,0 +1,45 @@
+@use "breakpoints" as bp;
+
+.p-frontBottom {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  height: auto;
+  @include bp.bp-mq(pc-1293px) {
+    height: 34vh;
+  }
+
+  .p-frontBottom__map {
+    background-color: #343434;
+    height: 708px;
+    @include bp.bp-mq(pc-872px) {
+      width: 100%;
+      height: auto;
+    }
+    @include bp.bp-mq(pc-1293px) {
+      margin: 0;
+    }
+  }
+  .p-frontBottom__titleText {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    max-width: 950px;
+    @include bp.bp-mq(pad-376px) {
+      height: 9%;
+      padding-bottom: 60%;
+    }
+    .p-frontBottom__title {
+      margin: 5%;
+    }
+    .p-frontBottom__underbar {
+      margin: 5%;
+    }
+    .p-frontBottom__text {
+      margin: 5%;
+    }
+  }
+}

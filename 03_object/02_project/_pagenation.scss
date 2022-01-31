@@ -1,0 +1,57 @@
+@use "breakpoints" as bp;
+
+.p-pagenation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  @include bp.bp-mq(pad-600px) {
+  justify-content: center;
+  }
+  .p-pagenation__page {
+    display: none;
+    @include bp.bp-mq(pad-600px) {
+      display: block;
+      margin: 5px;
+    }
+  }
+  .p-pagenation__list--num {
+    display: none;
+    @include bp.bp-mq(pad-600px) {
+      display: inline;
+      padding: 5px 9px;
+      margin: 25px 5px;
+      border: 1px solid rgba(128, 128, 128, 0.493);
+      &:nth-child(12) {
+        display: none;
+      }
+    }
+  }
+  .p-pagenation__list--lt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+
+    &::after {
+      content: "前へ";
+      display: inline;
+      @include bp.bp-mq(pad-600px) {
+        display: none;
+      }
+    }
+  }
+  .p-pagenation__list--gt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    &::before {
+      content: "次へ";
+      display: inline;
+      @include bp.bp-mq(pad-600px) {
+        display: none;
+      }
+    }
+  }
+}

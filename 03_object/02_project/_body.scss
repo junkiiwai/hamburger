@@ -1,0 +1,20 @@
+@use "breakpoints" as bp;
+
+.p-body{
+    margin: auto;
+    display: grid;
+    grid-template-rows: 217px 1fr 150px;
+    grid-template-columns: 1fr 0px;
+    gap: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+
+    @include bp.bp-mq(pc-926px){
+        grid-template-columns: 926px 367px;
+    }
+    @include bp.bp-mq(pc-1293px){
+        grid-template-columns: 1fr 367px;
+    }
+
+}

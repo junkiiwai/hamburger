@@ -1,0 +1,31 @@
+// .c-xCross {
+//   display: block;
+//   margin: 10px 10px 100px 100px;
+//   width: 30px;
+//   height: 5px;
+//   transform: rotate(-45deg);
+//   &::after {
+//     transform: rotate(45deg);
+//   }
+// }
+.c-xCross {
+  position: absolute;
+  right: 0;
+  margin: 30px 10px;
+}
+
+.c-xCross::before,
+.c-xCross::after {
+  display: block;
+  content: "";
+  width: 45px;
+  height: 5px;
+  background: #808080;
+}
+.c-xCross::before {
+  transform: rotate(-45deg);
+  margin-bottom: -5px;
+}
+.c-xCross::after {
+  transform: rotate(45deg);
+}
