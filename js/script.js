@@ -1,29 +1,19 @@
 // メニュータブをクリックしてサイドバーを開いて暗くする
+
 $(function () {
-  $(window).resize(function () {
+  $(".p-menutab--open").click(function () {
     if (window.matchMedia("(max-width: 766px)").matches) {
-      $(function () {
-        $(".p-menutab--open").click(function () {
-          $(".p-sidebar").animate({
-            "margin-left": "-328px",
-          });
-          $(".p-menutab--bg").css("visibility", "visible");
-        });
+      $(".p-sidebar").animate({
+        "margin-left": "-328px",
       });
     } else {
-      $(function () {
-        $(".p-menutab--open").click(function () {
-          $(".p-sidebar").animate({
-            "margin-left": "-428px",
-          });
-          $(".p-menutab--bg").css("visibility", "visible");
-        });
+      $(".p-sidebar").animate({
+        "margin-left": "-428px",
       });
     }
+    $(".p-menutab--bg").css("visibility", "visible");
   });
 });
-
-
 
 // Xボタンクリックしてサイドバーを閉じて明るく戻す
 $(function () {
@@ -55,7 +45,7 @@ $(function () {
   });
 });
 
-// p-arcContentの高さをp-cardの高さに応じて伸縮させる
+p-arcContentの高さをp-cardの高さに応じて伸縮させる
 $(function () {
   $(window).resize(function () {
     if (window.matchMedia("(min-width: 600px)").matches) {
