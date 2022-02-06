@@ -6,19 +6,22 @@
   justify-content: center;
   height: 225px;
   overflow: hidden;
-  @include bp.bp-mq(pad-600px) {
-    height: 70vw;
+  @include bp.bp-mq(pad-376px) {
+    height: 59.85vw;
+  }
+  @include bp.bp-mq(pc-835px){
+    height: 500.34px;
   }
 
   .p-singleTop__title {
     position: absolute;
     left: 8%;
     font-size: 36px;
-    @include bp.bp-mq(pc-835px) {
-      font-size: 4.32vw;
+    @include bp.bp-mq(pad-500px) {
+      font-size: 7.2vw;
     }
-    @include bp.bp-mq(pc-926px) {
-      font-size: 40px;
+    @include bp.bp-mq(pc-835px) {
+      font-size: 60px;
       left: 75px;
     }
     @include bp.bp-mq(pc-1293px) {
@@ -30,12 +33,12 @@
     width: 250%;
   
     @include bp.bp-mq(pc-835px) {
-      margin-top: -16%;
-      margin-bottom: -16%;
+      height: 1047px;
+      width: auto;
     }
-    @include bp.bp-mq(pc-872px) {
-      width: 100%;
+    @include bp.bp-mq(pc-1920px) {
       height: auto;
+      width: 100%;
     }
   }
 }

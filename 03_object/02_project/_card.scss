@@ -2,7 +2,9 @@
 
 .p-card {
   padding: 2% 4%;
-  height: fit-content;
+  @include bp.bp-mq(pad-600px){
+    width: 50%;
+  }
   .p-card__title {
     font-size: 20px;
     @include bp.bp-mq(pc-1293px) {

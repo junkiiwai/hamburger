@@ -16,3 +16,25 @@
     width: 100%;
   }
 }
+.p-main--single {
+  grid-row: 2;
+  grid-column: 1;
+  width: 100vw;
+  @include bp.bp-mq(pc-926px) {
+    width: 100%;
+  }
+  @include bp.bp-mq(pc-1293px) {
+    width: calc(100vw - 367px);
+  }
+}
+.p-main--page {
+  grid-row: 2;
+  grid-column: 1;
+  width: 100vw;
+  @include bp.bp-mq(pc-926px) {
+    width: 100%;
+  }
+  @include bp.bp-mq(pc-1293px) {
+    width: calc(100vw - 367px);
+  }
+}

@@ -1,0 +1,13 @@
+.p-table {
+  border-collapse: collapse;
+}
+.p-table tr td {
+  border: 1px solid #b7b7b7;
+  padding: 20px;
+}
+.p-table tr td:nth-child(1) {
+  width: calc(30vw - 1.5px);
+}
+.p-table tr td:nth-child(2) {
+  width: calc(70vw - 1.5px);
+}

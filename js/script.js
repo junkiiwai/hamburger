@@ -27,11 +27,15 @@ $(function () {
 
 // 画面幅動かした時にサイドバーを閉じて明るく戻す
 $(function () {
+  let timer = null;
   $(window).resize(function () {
-    $(".p-sidebar").animate({
-      "margin-left": "0px",
-    });
-    $(".p-menutab--bg").css("visibility", "hidden");
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      $(".p-sidebar").animate({
+        "margin-left": "0px",
+      });
+      $(".p-menutab--bg").css("visibility", "hidden");
+    }, 30);  //0.03秒以上resizeが静止すれば発火する
   });
 });
 
@@ -42,25 +46,5 @@ $(function () {
     const underbar = $(".p-frontBottom__underbar").outerHeight(true);
     const text = $(".p-frontBottom__text").outerHeight(true);
     $(".p-frontBottom").css("height", title + underbar + text);
-  });
-});
-
-p-arcContentの高さをp-cardの高さに応じて伸縮させる
-$(function () {
-  $(window).resize(function () {
-    if (window.matchMedia("(min-width: 600px)").matches) {
-      $(function () {
-        $(window).resize(function () {
-          const arcBurgerHeight = $(".p-card").outerHeight(true);
-          $(".p-arcContent__img").css("height", arcBurgerHeight);
-        });
-      });
-    } else {
-      $(function () {
-        $(window).resize(function () {
-          $(".p-arcContent__img").css("height", "auto");
-        });
-      });
-    }
   });
 });

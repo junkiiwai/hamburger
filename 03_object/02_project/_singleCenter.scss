@@ -1,0 +1,115 @@
+@use "breakpoints" as bp;
+
+.p-singleCenter {
+  padding: 0 4%;
+  .p-singleCenter__title1 {
+    padding: 2% 0;
+  }
+  .p-singleCenter__quote {
+    padding: 3vw;
+    margin-bottom: 5vw;
+    .p-singleCenter__quote__text {
+      margin: 0;
+    }
+    .p-singleCenter__quote__source {
+      margin: 3vw 0;
+    }
+  }
+  .p-singleCenter__bigImg {
+    margin: 0;
+    overflow: hidden;
+    .p-singleCenter__bigImg__img {
+      width: 100%;
+      margin: -25% 0 0 0;
+    }
+  }
+  .p-singleCenter__article {
+    display: flex;
+    align-items: flex-start;
+    margin: 5vw 0;
+    .p-singleCenter__article__img {
+      width: 35%;
+    }
+    .p-singleCenter__article__text {
+      width: 65%;
+      padding: 0 2%;
+    }
+  }
+  .p-singleCenter__smImg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+    .p-singleCenter__smImg__img {
+      width: 95%;
+    }
+  }
+  .p-singleCenter__imgBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    row-gap: 10px;
+    column-gap: 10px;
+    .p-singleCenter__imgBox__img {
+      width: 100%;
+      @include bp.bp-mq(pad-435px) {
+        max-width: calc(50% - 5px);
+      }
+      @include bp.bp-mq(pc-1293px) {
+        max-width: calc(100% / 3 - 20px / 3);
+      }
+    }
+  }
+  .p-singleCenter__list {
+    margin: 10% 0;
+    @include bp.bp-mq(pc-926px) {
+      margin: 85.2px 0;
+    }
+    .p-singleCenter__list__list {
+      padding: 0;
+      margin-left: 0;
+      &:nth-child(2) {
+        margin-left: 1rem;
+      }
+      &:nth-child(5) {
+        margin-left: 1rem;
+      }
+      @include bp.bp-mq(pad-435px) {
+        margin-left: 40px;
+        &:nth-child(2) {
+          margin-left: calc(1rem + 40px);
+        }
+        &:nth-child(5) {
+          margin-left: calc(1rem + 40px);
+        }
+      }
+    }
+  }
+  .p-singleCenter__btn {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+    @include bp.bp-mq(pad-376px) {
+      justify-content: flex-start;
+    }
+    @include bp.bp-mq(pc-926px) {
+      margin: 42.6px 0;
+    }
+
+    .p-singleCenter__btn__btn {
+      width: 100%;
+      .p-singleCenter__btn__btn__btn {
+        padding: 30px;
+        border-radius: 15px;
+        @include bp.bp-mq(pad-376px) {
+          width: 345px;
+        }
+      }
+    }
+  }
+  .p-singleCenter__bold {
+    margin: 5% 0 20% 0;
+  }
+}

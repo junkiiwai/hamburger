@@ -1,0 +1,33 @@
+.p-card {
+  padding: 2% 4%;
+}
+@media screen and (min-width: 600px) {
+  .p-card {
+    width: 50%;
+  }
+}
+.p-card .p-card__title {
+  font-size: 20px;
+}
+@media screen and (min-width: 1293px) {
+  .p-card .p-card__title {
+    font-size: 1.55vw;
+  }
+}
+.p-card .p-card__subtitle {
+  font-size: 16px;
+}
+.p-card .p-card__text {
+  margin-right: 10%;
+  font-size: 16px;
+}
+.p-card .p-card__btn {
+  margin: 7% 0 5% 0;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1293px) {
+  .p-card .p-card__btn .p-card__btn__size {
+    padding: 10px 50px;
+  }
+}

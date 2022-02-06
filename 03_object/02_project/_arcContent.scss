@@ -13,19 +13,23 @@
   }
   .p-arcContent__img {
     width: 100%;
-    height: 500px;
+    height: auto;
     @include bp.bp-mq(pad-600px) {
       width: 50%;
-
     }
     .p-arcContent__img__img {
       width: 100%;
-      height: 100%;
+      height: auto;
       margin-bottom: -4px;
-      
+
       @include bp.bp-mq(pad-600px) {
         width: auto;
+        height: 100%;
         margin-bottom: auto;
+      }
+      @include bp.bp-mq(pc-1816px) {
+        width: 100%;
+        height: auto;
       }
     }
   }

@@ -36,7 +36,6 @@
 @use'03_object/02_project/_siteName';
 @use'03_object/02_project/_main';
 @use'03_object/02_project/_frontTop';
-
 @use'03_object/02_project/_frontCenter';
 @use'03_object/02_project/_frontContent';
 @use'03_object/02_project/_frontBottom';
@@ -50,5 +49,10 @@
 @use'03_object/02_project/_card';
 @use'03_object/02_project/_pagenation';
 @use'03_object/02_project/_singleTop';
+@use'03_object/02_project/_singleCenter';
+@use'03_object/02_project/_code';
+@use'03_object/02_project/_table';
+@use'03_object/02_project/_pageTop';
+
 
 

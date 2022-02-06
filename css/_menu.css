@@ -1,0 +1,24 @@
+.p-menu {
+  position: absolute;
+  top: 60px;
+  white-space: nowrap;
+}
+.p-menu .p-menu__title {
+  font-size: 34px;
+  padding-left: 40px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 926px) {
+  .p-menu .p-menu__title {
+    color: #808080;
+  }
+}
+.p-menu .p-menu__group .p-menu__genre {
+  font-size: 24px;
+  margin: 30px 0 25px 0;
+}
+.p-menu .p-menu__group .p-menu__list {
+  font-size: 20px;
+  margin: 13px 10px;
+  padding: 5px;
+}

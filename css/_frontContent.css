@@ -1,0 +1,92 @@
+.p-frontContent {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 4%;
+}
+.p-frontContent:hover {
+  opacity: 0.6;
+}
+@media screen and (min-width: 600px) {
+  .p-frontContent {
+    margin-bottom: 0;
+    width: 47%;
+  }
+}
+.p-frontContent .p-frontContent__img {
+  width: 100%;
+}
+.p-frontContent .p-frontContent__title {
+  position: absolute;
+  top: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 41px;
+  padding: 17px 15px;
+  margin: 0;
+}
+@media screen and (min-width: 600px) {
+  .p-frontContent .p-frontContent__title {
+    font-size: 44px;
+  }
+}
+@media screen and (min-width: 872px) {
+  .p-frontContent .p-frontContent__title {
+    font-size: 5.05vw;
+  }
+}
+@media screen and (min-width: 926px) {
+  .p-frontContent .p-frontContent__title {
+    font-size: 46.8px;
+  }
+}
+@media screen and (min-width: 1293px) {
+  .p-frontContent .p-frontContent__title {
+    font-size: 3.62vw;
+  }
+}
+.p-frontContent .p-frontContent__underbar {
+  position: absolute;
+  display: block;
+  top: 90px;
+  margin-left: 15px;
+}
+@media screen and (min-width: 600px) {
+  .p-frontContent .p-frontContent__underbar {
+    top: 95px;
+  }
+}
+@media screen and (min-width: 872px) {
+  .p-frontContent .p-frontContent__underbar {
+    top: 13.5%;
+  }
+}
+@media screen and (min-width: 926px) {
+  .p-frontContent .p-frontContent__underbar {
+    top: 100px;
+  }
+}
+@media screen and (min-width: 1293px) {
+  .p-frontContent .p-frontContent__underbar {
+    top: 45px;
+    margin-top: 15%;
+  }
+}
+.p-frontContent .p-frontContent__titleText {
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.p-frontContent .p-frontContent__titleText .p-frontContent__titleText__title {
+  font-size: 22px;
+}
+@media screen and (min-width: 600px) {
+  .p-frontContent .p-frontContent__titleText .p-frontContent__titleText__title {
+    font-size: 24px;
+  }
+}
+.p-frontContent .p-frontContent__titleText .p-frontContent__titleText__text {
+  font-size: 16px;
+}
