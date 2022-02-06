@@ -35,7 +35,7 @@ $(function () {
         "margin-left": "0px",
       });
       $(".p-menutab--bg").css("visibility", "hidden");
-    }, 30);  //0.03秒以上resizeが静止すれば発火する
+    }, 50);  //0.05秒以上resizeが静止すれば発火する
   });
 });
 

@@ -1,18 +1,21 @@
 @use "breakpoints" as bp;
 
 .p-card {
-  padding: 2% 4%;
+  padding: 4%;
   @include bp.bp-mq(pad-600px){
     width: 50%;
   }
   .p-card__title {
     font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
     @include bp.bp-mq(pc-1293px) {
       font-size: 1.55vw;
     }
   }
   .p-card__subtitle {
     font-size: 16px;
+    margin-bottom: 10px;
   }
   .p-card__text {
     margin-right: 10%;

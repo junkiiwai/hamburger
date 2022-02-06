@@ -1,0 +1,14 @@
+.p-siteName {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  -webkit-margin-before: auto;
+          margin-block-start: auto;
+  margin: 5px 0 35px 0;
+}
+@media screen and (min-width: 1293px) {
+  .p-siteName {
+    font-size: 64px;
+    margin: auto 0 auto 5%;
+  }
+}
